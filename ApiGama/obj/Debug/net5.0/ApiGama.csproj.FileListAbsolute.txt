@@ -62,4 +62,3 @@ C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Ser
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Service.pdb
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Entity.pdb
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Repository.pdb
-C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\obj\Debug\net5.0\ApiGama.csproj.CopyComplete

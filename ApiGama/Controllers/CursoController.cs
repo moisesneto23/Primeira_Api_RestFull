@@ -19,7 +19,16 @@ namespace ApiGama.Controllers
             _sistemaService = new SistemaService();
         }
 
+        // pega todos os cursos
+        [HttpGet]
+        public List<Curso> GetAll()
+        {
+             var cursos= _sistemaService.GetCursos();
+            return cursos;
+        }
         
+        
+        //pega curso por id
         [HttpGet("{id}")]
         public Curso Get(string id)
         {
