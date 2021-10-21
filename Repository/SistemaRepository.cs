@@ -14,27 +14,76 @@ namespace Repository
         {
             _dbContext = new SistemaContext();
         }
+
+
         public List<Curso> GetAllCursos()
         {
-            return _dbContext.Cursos.ToList();
+            try
+            {
+                return _dbContext.Cursos.ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
         public List<Aula> GetAllAula()
         {
-            return _dbContext.Aulas.ToList();
+            try
+            {
+                return _dbContext.Aulas.ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
 
         public Curso GetCursoById(string id)
         {
-            return _dbContext.Cursos.FirstOrDefault(c => c.Id == id);
+            try
+            {
+                return _dbContext.Cursos.FirstOrDefault(c => c.Id == id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
         public Aula GetAulaById(string id)
         {
-            return _dbContext.Aulas.FirstOrDefault(c => c.Id == id);
+            try
+            {
+                return _dbContext.Aulas.FirstOrDefault(c => c.Id == id);
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+            
         }
 
         public List<Aula> GetAulaPorCurso(string idCurso)
         {
-            return _dbContext.Aulas.Where(aula => aula.Curso.Id == idCurso).ToList();
+            try
+            {
+
+                return _dbContext.Aulas.Where(aula => aula.Curso.Id == idCurso).ToList();
+                
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+           
         }
 
         public async Task<Curso> CadastrarCurso(Curso curso)
@@ -68,5 +117,8 @@ namespace Repository
                 return null;
             }
         }
+
+
+       
     }
 }
