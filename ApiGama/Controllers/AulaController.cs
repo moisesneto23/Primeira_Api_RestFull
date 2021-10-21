@@ -36,7 +36,7 @@ namespace ApiGama.Controllers
 
         //cadastro de aula
         [HttpPost]
-        public async Task<Aula> CadastraChocolate(Aula aula)
+        public async Task<Aula> CadastraAula(Aula aula)
         {
             return await _sistemaService.CadastrarAula(aula);
         }

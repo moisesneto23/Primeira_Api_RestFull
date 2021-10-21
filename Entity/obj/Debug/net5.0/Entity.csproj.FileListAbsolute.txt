@@ -9,4 +9,7 @@ C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\bin\Debug\net5.0\Enti
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\obj\Debug\net5.0\Entity.dll
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\obj\Debug\net5.0\ref\Entity.dll
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\obj\Debug\net5.0\Entity.pdb
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\bin\Debug\net5.0\Entity.runtimeconfig.json
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\bin\Debug\net5.0\Entity.runtimeconfig.dev.json
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\obj\Debug\net5.0\Entity.genruntimeconfig.cache
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Entity\obj\Debug\net5.0\Entity.csproj.AssemblyReference.cache

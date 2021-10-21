@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGama", "ApiGama.csproj", "{546D3955-535D-48EC-9593-3B6A0DE954A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGama", "ApiGama.csproj", "{546D3955-535D-48EC-9593-3B6A0DE954A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0724012-4851-447F-A90A-644C2A95E87D} = {E0724012-4851-447F-A90A-644C2A95E87D}
+		{45D62021-B1B6-4C33-9173-FE806D23F290} = {45D62021-B1B6-4C33-9173-FE806D23F290}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "..\Entity\Entity.csproj", "{45D62021-B1B6-4C33-9173-FE806D23F290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "..\Entity\Entity.csproj", "{45D62021-B1B6-4C33-9173-FE806D23F290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{E0724012-4851-447F-A90A-644C2A95E87D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{E0724012-4851-447F-A90A-644C2A95E87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "..\Service\Service.csproj", "{08A84A89-75AF-47AD-9B22-A829286491AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "..\Service\Service.csproj", "{08A84A89-75AF-47AD-9B22-A829286491AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

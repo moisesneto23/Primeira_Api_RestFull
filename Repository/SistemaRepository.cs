@@ -14,7 +14,7 @@ namespace Repository
         {
             _dbContext = new SistemaContext();
         }
-        public List<Curso> GetAllCurso()
+        public List<Curso> GetAllCursos()
         {
             return _dbContext.Cursos.ToList();
         }

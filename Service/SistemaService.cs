@@ -19,7 +19,7 @@ namespace Service
         {
             try
             {
-                var lista = _sistemaRepository.GetAllCurso();
+                var lista = _sistemaRepository.GetAllCursos();
                 return lista;
 
             }
