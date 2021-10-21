@@ -1,0 +1,17 @@
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Service.deps.json
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Service.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\ref\Service.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Service.pdb
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Entity.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Repository.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Repository.pdb
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\bin\Debug\net5.0\Entity.pdb
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\ref\Service.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.pdb
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
