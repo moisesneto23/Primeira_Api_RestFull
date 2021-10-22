@@ -12,18 +12,18 @@ namespace ApiGama.Controllers
     [Route("[controller]")]
     public class CursoController : ControllerBase
     {
-        private SistemaService _sistemaService;
+        private CursoService _cursoService;
 
         public CursoController()
         {
-            _sistemaService = new SistemaService();
+            _cursoService = new CursoService();
         }
 
         // pega todos os cursos
         [HttpGet]
         public List<Curso> GetAll()
         {
-             var cursos= _sistemaService.GetCursos();
+             var cursos= _cursoService.GetCursos();
             return cursos;
         }
         
@@ -32,7 +32,7 @@ namespace ApiGama.Controllers
         [HttpGet("{id}")]
         public Curso Get(string id)
         {
-            var curso = _sistemaService.GetCurso(id);
+            var curso = _cursoService.GetCurso(id);
             return curso;
         }
         
@@ -41,9 +41,30 @@ namespace ApiGama.Controllers
         [HttpPost]
         public async Task<Curso> CadastraCurso(Curso curso)
         {
-            return await _sistemaService.CadastrarCurso(curso);
+            return await _cursoService.CadastrarCurso(curso);
         }
 
+        //deta curso com todas as aulas que ele possui
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCurso(string id)
+        {
+           
+            if (AulaExists(id))
+            {
+                _cursoService.DeleteCurso(id);
+                return NoContent();
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+
+        private bool AulaExists(string id)
+        {
+            return _cursoService.GetCurso().Any(e => e.Id == id);
+        }
 
     }
 }

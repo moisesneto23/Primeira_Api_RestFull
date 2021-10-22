@@ -12,25 +12,25 @@ namespace ApiGama.Controllers
     [Route("[controller]")]
     public class AulaController : ControllerBase
     {
-        private SistemaService _sistemaService;
+        private AulaService _aulaService;
 
         public AulaController()
         {
-            _sistemaService = new SistemaService();
+            _aulaService = new AulaService();
         }
 
         //pega aula por id
         [HttpGet("{id}")]
         public Aula Get(string id)
         {
-            var aula = _sistemaService.GetAula(id);
+            var aula = _aulaService.GetAula(id);
             return aula;
         }
         //pega aula por id do curso
         [HttpGet("origem/{curso}")]
         public List<Aula> GetPorOrigem(string idCurso)
         {
-            var aulas = _sistemaService.GetAulaPorCurso(idCurso);
+            var aulas = _aulaService.GetAulaPorCurso(idCurso);
             return aulas;
         }
 
@@ -38,9 +38,30 @@ namespace ApiGama.Controllers
         [HttpPost]
         public async Task<Aula> CadastraAula(Aula aula)
         {
-            return await _sistemaService.CadastrarAula(aula);
+            return await _aulaService.CadastrarAula(aula);
         }
 
+        //deleta aula por id
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAula(string id)
+        {
+            
+            if (AulaExists(id))
+            {
+                _aulaService.DeleteAula(id);
+                return NoContent();
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+
+        private bool AulaExists(string id)
+        {
+            return _aulaService.GetAula().Any(e => e.Id == id);
+        }
 
     }
 }
