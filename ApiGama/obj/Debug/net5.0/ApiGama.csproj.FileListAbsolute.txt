@@ -64,3 +64,4 @@ C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Ent
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Repository.pdb
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Humanizer.dll
 C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\moikn\OneDrive\Área de Trabalho\GamaFinal\ApiGama\obj\Debug\net5.0\ApiGama.csproj.CopyComplete
