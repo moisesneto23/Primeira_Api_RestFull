@@ -21,18 +21,18 @@ namespace ApiGama.Controllers
 
         //pega aula por id
         [HttpGet("{id}")]
-        public Aula Get(string id)
+        public Aula Get(int id)
         {
             var aula = _aulaService.GetAula(id);
             return aula;
         }
         //pega aula por id do curso
         [HttpGet("origem/{curso}")]
-        public List<Aula> GetPorOrigem(string idCurso)
+       /* public List<Aula> GetPorOrigem(string idCurso)
         {
             var aulas = _aulaService.GetAulaPorCurso(idCurso);
             return aulas;
-        }
+        }*/
 
         //cadastro de aula
         [HttpPost]
@@ -43,7 +43,7 @@ namespace ApiGama.Controllers
 
         //deleta aula por id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAula(string id)
+        public async Task<IActionResult> DeleteAula(int id)
         {
             
             if (AulaExists(id))
@@ -57,8 +57,13 @@ namespace ApiGama.Controllers
             }
         }
 
+        [HttpPut]
+        public Aula Update(Aula aula)
+        {
+            return _aulaService.UpdateCourse(aula);
+        }
 
-        private bool AulaExists(string id)
+        private bool AulaExists(int id)
         {
             return _aulaService.GetAula().Any(e => e.Id == id);
         }

@@ -6,29 +6,20 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class SistemaRepository
+    public class AulaRepository
     {
         private SistemaContext _dbContext;
 
-        public SistemaRepository()
+        public AulaRepository()
         {
             _dbContext = new SistemaContext();
         }
 
-
-        public List<Curso> GetAllCursos()
+        public List<Aula> GetAulas()
         {
-            try
-            {
-                return _dbContext.Cursos.ToList();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            
+            return _dbContext.Aulas.ToList();
         }
+        
         public List<Aula> GetAllAula()
         {
             try
@@ -43,20 +34,9 @@ namespace Repository
             
         }
 
-        public Curso GetCursoById(string id)
-        {
-            try
-            {
-                return _dbContext.Cursos.FirstOrDefault(c => c.Id == id);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            
-        }
-        public Aula GetAulaById(string id)
+       
+        
+        public Aula GetAulaById(int id)
         {
             try
             {
@@ -70,7 +50,7 @@ namespace Repository
             
         }
 
-        public List<Aula> GetAulaPorCurso(string idCurso)
+        public List<Aula> GetAulaPorCurso(int idCurso)
         {
             try
             {
@@ -85,23 +65,9 @@ namespace Repository
             }
            
         }
+       
 
-        public async Task<Curso> CadastrarCurso(Curso curso)
-        {
-            try
-            {
-                var result = await _dbContext.AddAsync(curso);
-                await _dbContext.SaveChangesAsync();
-
-                return result.Entity;
-
-            }
-            catch (Exception e)
-            {
-                return null;
-            }
-
-        }
+        // tem que ajeitar cadastrar aula procurar um metodo que passe só o id do curso
         public async Task<Aula> CadastrarAula(Aula aula)
         {
             try
@@ -119,6 +85,41 @@ namespace Repository
         }
 
 
-       
+        //deleta aula por id
+        public Aula DeleteAula(int id)
+        {
+            try
+            {
+                var aulaDel = _dbContext.Aulas.FirstOrDefault(a => a.Id == id);
+                _dbContext.Remove(aulaDel);
+                _dbContext.SaveChangesAsync();
+                return aulaDel;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+           
+        }
+
+        public Aula UpdateAula(Aula  aula)
+        {
+            try
+            {
+                var result = _dbContext.Update(aula);
+                _dbContext.SaveChanges();
+                return result.Entity;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+
+        }
+
+
+
     }
 }

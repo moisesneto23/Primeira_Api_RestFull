@@ -2,7 +2,7 @@
 
 namespace Entity.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class atuaLizes : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -10,7 +10,8 @@ namespace Entity.Migrations
                 name: "Cursos",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CapaImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Professor = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -25,10 +26,11 @@ namespace Entity.Migrations
                 name: "Aulas",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CursoId = table.Column<int>(type: "int", nullable: false),
                     TituloAula = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LinkAula = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CursoId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     DescricaoAula = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -39,7 +41,7 @@ namespace Entity.Migrations
                         column: x => x.CursoId,
                         principalTable: "Cursos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

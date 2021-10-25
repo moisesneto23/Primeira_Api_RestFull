@@ -11,9 +11,9 @@ namespace Entity
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=Gama;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=UpdateGamaAcademy;Trusted_Connection=True;");
         }
-        public DbSet<Curso> Cursos { get; set; }
-        public DbSet<Aula> Aulas { get; set; }
+        public DbSet<Curso> Cursos { get; set;}
+        public DbSet<Aula> Aulas { get; set;}
     } 
 }

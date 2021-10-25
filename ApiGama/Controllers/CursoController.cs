@@ -30,7 +30,7 @@ namespace ApiGama.Controllers
         
         //pega curso por id
         [HttpGet("{id}")]
-        public Curso Get(string id)
+        public Curso Get(int id)
         {
             var curso = _cursoService.GetCurso(id);
             return curso;
@@ -39,14 +39,14 @@ namespace ApiGama.Controllers
 
         //cadastro de curso
         [HttpPost]
-        public async Task<Curso> CadastraCurso(Curso curso)
+        public  Curso CadastraCurso(Curso curso)
         {
-            return await _cursoService.CadastrarCurso(curso);
+            return  _cursoService.CadastrarCurso(curso);
         }
 
         //deta curso com todas as aulas que ele possui
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCurso(string id)
+        public async Task<IActionResult> DeleteCurso(int id)
         {
            
             if (AulaExists(id))
@@ -60,8 +60,13 @@ namespace ApiGama.Controllers
             }
         }
 
+        [HttpPut]
+        public Curso Update(Curso course)
+        {
+            return _cursoService.UpdateCourse(course);
+        }
 
-        private bool AulaExists(string id)
+        private bool AulaExists(int id)
         {
             return _cursoService.GetCurso().Any(e => e.Id == id);
         }

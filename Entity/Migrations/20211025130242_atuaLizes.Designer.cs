@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entity.Migrations
 {
     [DbContext(typeof(SistemaContext))]
-    [Migration("20211021142334_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20211025130242_atuaLizes")]
+    partial class atuaLizes
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,11 +22,13 @@ namespace Entity.Migrations
 
             modelBuilder.Entity("Entity.Aula", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CursoId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CursoId")
+                        .HasColumnType("int");
 
                     b.Property<string>("DescricaoAula")
                         .HasColumnType("nvarchar(max)");
@@ -46,8 +48,10 @@ namespace Entity.Migrations
 
             modelBuilder.Entity("Entity.Curso", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CapaImg")
                         .HasColumnType("nvarchar(max)");
@@ -70,7 +74,9 @@ namespace Entity.Migrations
                 {
                     b.HasOne("Entity.Curso", "Curso")
                         .WithMany()
-                        .HasForeignKey("CursoId");
+                        .HasForeignKey("CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Curso");
                 });

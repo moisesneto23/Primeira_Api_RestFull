@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rctnHdzrZ3cLNQbPdLYxJffzACxbZp47SuAuF2aFJn7v0dPN3LBuTdTRAEwibySJ+pbtfwX/YbqUiwYKhQJVtg==",
+  "dgSpecHash": "h1acoaCFLUmxk/lJ1SeWLN7LJq237otP1QgxFJAHjtrKWyFeIc5c2txXU68EFJ5HXCiAHlysmdQBAwjKfkUAeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\ApiGama\\ApiGama.csproj",
+  "projectFilePath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\ApiGama\\ApiGama.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moikn\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\moikn\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

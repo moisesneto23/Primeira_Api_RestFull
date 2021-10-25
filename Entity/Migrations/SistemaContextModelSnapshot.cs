@@ -20,11 +20,13 @@ namespace Entity.Migrations
 
             modelBuilder.Entity("Entity.Aula", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CursoId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CursoId")
+                        .HasColumnType("int");
 
                     b.Property<string>("DescricaoAula")
                         .HasColumnType("nvarchar(max)");
@@ -44,8 +46,10 @@ namespace Entity.Migrations
 
             modelBuilder.Entity("Entity.Curso", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CapaImg")
                         .HasColumnType("nvarchar(max)");
@@ -68,7 +72,9 @@ namespace Entity.Migrations
                 {
                     b.HasOne("Entity.Curso", "Curso")
                         .WithMany()
-                        .HasForeignKey("CursoId");
+                        .HasForeignKey("CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Curso");
                 });

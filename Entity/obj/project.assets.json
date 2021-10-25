@@ -5766,11 +5766,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Entity\\Entity.csproj",
+      "projectPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\moikn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moikn\\AppData\\Roaming\\NuGet\\NuGet.Config",

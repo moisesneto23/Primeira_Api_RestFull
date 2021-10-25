@@ -5725,11 +5725,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\moikn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moikn\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5746,8 +5746,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Entity\\Entity.csproj"
+            "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Entity\\Entity.csproj"
             }
           }
         }

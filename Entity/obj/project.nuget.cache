@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+PcyLTSNb9jIuBfb8WfJ5gckp3ouP9hIa4ZgXVRhwsy8b4yO7R1U8vLyrZvSUiGP09UldIHpNzFAOrd42BBnFQ==",
+  "dgSpecHash": "HMNnWNG2cqRL49rRnrVyWd7DvFB3MF1AjMfL27MSooWhzjWYt/03IFT3g5oBdPIkVf9ycC+MtLt9FJUB3378Yg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\GamaFinal\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\moikn\\OneDrive\\Área de Trabalho\\Gama\\GamaFinal\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moikn\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\moikn\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
